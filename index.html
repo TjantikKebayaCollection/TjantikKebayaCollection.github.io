@@ -58,7 +58,7 @@
 
         /* Image Section */
         .image-hero {
-            background-image: url('tjantik_icon.png'); /* Replace with your image path */
+            background-image: url('tjantik_icon.png'); /* Default image for desktop */
             background-size: cover;
             background-position: center;
             height: 100vh; /* Full viewport height */
@@ -66,40 +66,43 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
-            text-align: center;
-            padding: 0 20px;
+        }
+
+        /* Media Query for Mobile */
+        @media (max-width: 768px) {
+            .image-hero {
+                background-image: url('logotjantik.jpg'); /* Image for mobile */
+            }
         }
 
         /* Sejarah Section */
         .sejarah-content {
-            padding: 40px 20px;
+            padding: 60px 20px;
             background-color: #c4a060; /* Background color for Sejarah section */
             text-align: center;
             color: #6f2436; /* Text color for Sejarah section */
         }
 
         .sejarah-content h2 {
-            font-size: 2.5rem;
+            font-size: 2.5rem; /* Adjusted font size */
             font-weight: bold;
             margin-bottom: 20px;
         }
 
         .sejarah-content p {
-            font-size: 1.125rem;
+            font-size: 1.25rem; /* Adjusted font size */
+            line-height: 1.6;
             max-width: 800px;
             margin-left: auto;
             margin-right: auto;
-            line-height: 1.6;
         }
 
-        /* Visi & Misi Section */
+        /* Vision and Mission Section */
         .vision-mission {
             display: flex;
             justify-content: space-between;
             padding: 60px 20px;
-            background-color: #f4f4f4;
-            color: #6f2436; /* Text color */
+            background-color: #fff;
         }
 
         .vision, .mission {
@@ -109,10 +112,10 @@
         }
 
         .vision h2, .mission h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
+            font-size: 2rem; /* Adjusted font size */
             font-weight: bold;
             text-align: center;
+            margin-bottom: 20px;
         }
 
         .vision ul, .mission ul {
@@ -121,75 +124,47 @@
         }
 
         .vision li, .mission li {
-            font-size: 1.125rem;
-            line-height: 1.8;
-            margin-bottom: 10px;
-        }
-
-        /* Mobile Adjustments */
-        @media (max-width: 768px) {
-            header a {
-                font-size: 16px;
-            }
-
-            .vision-mission {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .vision, .mission {
-                max-width: 100%;
-                margin-bottom: 20px;
-            }
-
-            .sejarah-content h2 {
-                font-size: 2rem;
-            }
-
-            .sejarah-content p {
-                font-size: 1rem;
-            }
+            font-size: 1.1rem;
+            margin: 10px 0;
         }
 
     </style>
 </head>
 <body>
 
-    <!-- Header with Links -->
     <header>
         <a href="#sejarah">Sejarah</a>
-        <a href="#visi-misi">Visi & Misi</a>
+        <a href="#vision">Visi</a>
+        <a href="#mission">Misi</a>
     </header>
 
-    <!-- Hero Image Section -->
-    <div class="image-hero">
-    </div>
+    <section class="image-hero"></section> <!-- Hero image section -->
 
-    <!-- Sejarah Section -->
     <section id="sejarah" class="sejarah-content">
-        <h2>Sejarah Perusahaan</h2>
-        <p>Tjantik Kebaya Collection has been a prominent name in the fashion industry, known for its exquisite Kebaya designs that blend traditional elements with modern flair. Established with the vision of preserving Indonesian culture while embracing contemporary aesthetics, Tjantik Kebaya has built a legacy of excellence and trust among its customers.</p>
+        <h2>Sejarah Tjantik Kebaya</h2>
+        <p>
+            Tjantik Kebaya Collection was founded with a mission to preserve and promote the traditional Indonesian Kebaya while blending modern aesthetics for today's fashion-conscious women. We strive to create timeless designs that reflect both tradition and innovation.
+        </p>
     </section>
 
-    <!-- Visi & Misi Section -->
-    <section id="visi-misi" class="vision-mission">
+    <section id="vision" class="vision-mission">
         <div class="vision">
             <h2>Visi</h2>
             <ul>
-                <li>Menjadi produsen kebaya yang dikenal di Indonesia dan internasional.</li>
-                <li>Memadukan tradisi, kualitas, dan modernitas dalam setiap desain kebaya.</li>
-                <li>Melestarikan budaya Indonesia melalui desain kebaya yang estetis dan inovatif.</li>
+                <li>To become the leading Kebaya manufacturer in Indonesia and internationally.</li>
+                <li>To integrate modern innovation with traditional Indonesian culture.</li>
+                <li>To provide high-quality, sustainable products with outstanding customer service.</li>
             </ul>
         </div>
         <div class="mission">
             <h2>Misi</h2>
             <ul>
-                <li>Menawarkan beragam desain kebaya yang disesuaikan dengan kebutuhan konsumen.</li>
-                <li>Menciptakan produk berkelanjutan yang memadukan tradisi, kualitas, dan modernitas.</li>
-                <li>Berinovasi melalui riset pasar untuk memenuhi preferensi pelanggan.</li>
-                <li>Berkolaborasi dengan perajin lokal untuk menampilkan warisan Indonesia.</li>
-                <li>Memastikan kepuasan dengan layanan luar biasa dan dukungan purna jual.</li>
-                <li>Mempromosikan kebaya sebagai simbol keindahan dan kebanggaan bangsa.</li>
+                <li>Offering a variety of Kebaya designs tailored to consumer needs.</li>
+                <li>Creating sustainable products that blend tradition, quality, and modernity.</li>
+                <li>Innovating through market research to meet customer preferences.</li>
+                <li>Collaborating with local artisans to showcase Indonesian heritage.</li>
+                <li>Ensuring customer satisfaction with exceptional service and after-sales support.</li>
+                <li>Promoting Kebaya as a symbol of national pride and beauty.</li>
             </ul>
         </div>
     </section>
