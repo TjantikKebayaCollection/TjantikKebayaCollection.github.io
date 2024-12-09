@@ -13,6 +13,7 @@
             font-family: 'Arial', sans-serif;
             background-color: #f4f4f4;
             color: #333;
+            box-sizing: border-box; /* Ensures padding and borders do not affect width and height */
         }
 
         /* Smooth Scrolling */
@@ -34,20 +35,21 @@
         header {
             background-color: white; /* White background for header */
             color: #722336; /* Text color #722336 */
-            padding: 20px;
+            padding: 15px 20px;
             text-align: center;
             position: sticky;
-            top: 0; /* Stick to the top */
-            z-index: 1000; /* Ensures the header stays on top of other content */
+            top: 0;
+            z-index: 1000;
             width: 100%;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-size: 1.25rem; /* Font size relative to root element */
         }
 
         header a {
-            color: #722336; /* Link color to match header text */
-            margin: 0 20px;
+            color: #722336;
+            margin: 0 15px;
             text-transform: uppercase;
-            font-size: 20px;
+            font-size: 18px;
         }
 
         header a:hover {
@@ -59,32 +61,36 @@
             background-image: url('tjantik_icon.png'); /* Replace with your image path */
             background-size: cover;
             background-position: center;
-            height: 700px; /* Set the height to 800px */
-            width: 100%; /* Full width */
+            height: 100vh; /* Full viewport height */
+            width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 0 20px;
         }
 
         /* Sejarah Section */
         .sejarah-content {
-            padding: 60px 20px;
+            padding: 40px 20px;
             background-color: #c4a060; /* Background color for Sejarah section */
             text-align: center;
             color: #6f2436; /* Text color for Sejarah section */
         }
 
         .sejarah-content h2 {
-            font-size: 36px;
+            font-size: 2.5rem;
             font-weight: bold;
             margin-bottom: 20px;
         }
 
         .sejarah-content p {
-            font-size: 20px;
+            font-size: 1.125rem;
             max-width: 800px;
             margin-left: auto;
             margin-right: auto;
+            line-height: 1.6;
         }
 
         /* Visi & Misi Section */
@@ -92,8 +98,8 @@
             display: flex;
             justify-content: space-between;
             padding: 60px 20px;
-            background-color: #6f2436; /* Same background color for the Vision and Mission section */
-            color: #c4a060; /* Same text color */
+            background-color: #f4f4f4;
+            color: #6f2436; /* Text color */
         }
 
         .vision, .mission {
@@ -103,7 +109,7 @@
         }
 
         .vision h2, .mission h2 {
-            font-size: 28px;
+            font-size: 2rem;
             margin-bottom: 20px;
             font-weight: bold;
             text-align: center;
@@ -115,39 +121,64 @@
         }
 
         .vision li, .mission li {
-            font-size: 20px;
+            font-size: 1.125rem;
+            line-height: 1.8;
             margin-bottom: 10px;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 768px) {
+            header a {
+                font-size: 16px;
+            }
+
+            .vision-mission {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .vision, .mission {
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .sejarah-content h2 {
+                font-size: 2rem;
+            }
+
+            .sejarah-content p {
+                font-size: 1rem;
+            }
         }
 
     </style>
 </head>
 <body>
-    <!-- Sticky Header -->
+
+    <!-- Header with Links -->
     <header>
         <a href="#sejarah">Sejarah</a>
         <a href="#visi-misi">Visi & Misi</a>
     </header>
 
-    <!-- Image Section -->
+    <!-- Hero Image Section -->
     <div class="image-hero">
-        <!-- This can be left empty as it's just the background -->
     </div>
 
     <!-- Sejarah Section -->
-    <div id="sejarah" class="sejarah-content">
-        <h2>Sejarah</h2>
-        <p>
-            Tjantik Kebaya Collection started with a passion to preserve Indonesia's rich cultural heritage while merging traditional craftsmanship with modern design. Our journey began with a small boutique offering timeless kebaya pieces and has grown into a trusted name, both locally and internationally.
-        </p>
-    </div>
+    <section id="sejarah" class="sejarah-content">
+        <h2>Sejarah Perusahaan</h2>
+        <p>Tjantik Kebaya Collection has been a prominent name in the fashion industry, known for its exquisite Kebaya designs that blend traditional elements with modern flair. Established with the vision of preserving Indonesian culture while embracing contemporary aesthetics, Tjantik Kebaya has built a legacy of excellence and trust among its customers.</p>
+    </section>
 
     <!-- Visi & Misi Section -->
-    <div id="visi-misi" class="vision-mission">
+    <section id="visi-misi" class="vision-mission">
         <div class="vision">
             <h2>Visi</h2>
             <ul>
-                <li>Menjadi produsen kebaya yang mendarat di Indonesia dan di pasar internasional yang dikenal dengan produknya kepercayaan merek, inovasi produk, dan layanan pelanggan yang unggul.</li>
-                <li>Kami berkomitmen untuk melestarikan dan mempromosikan budaya tradisional Indonesia melalui desain kebaya yang modern dan estetis.</li>
+                <li>Menjadi produsen kebaya yang dikenal di Indonesia dan internasional.</li>
+                <li>Memadukan tradisi, kualitas, dan modernitas dalam setiap desain kebaya.</li>
+                <li>Melestarikan budaya Indonesia melalui desain kebaya yang estetis dan inovatif.</li>
             </ul>
         </div>
         <div class="mission">
@@ -161,7 +192,7 @@
                 <li>Mempromosikan kebaya sebagai simbol keindahan dan kebanggaan bangsa.</li>
             </ul>
         </div>
-    </div>
+    </section>
 
 </body>
 </html>
