@@ -27,16 +27,22 @@
 
         /* Sejarah Section */
         .sejarah {
-            background-image: url('logotjantik.jpg');
+            background-image: url('tjantik.png'); /* Replace with the actual image path */
             background-size: cover;
             background-position: center;
+            height: 800px; /* Set the height to 800px */
+            width: 100%; /* Full width */
+            display: flex;
+            align-items: center;
+            justify-content: center;
             color: white;
-            padding: 80px 20px;
             text-align: center;
+            padding: 0 20px;
+            box-sizing: border-box;
         }
 
         .sejarah h2 {
-            font-size: 40px;
+            font-size: 50px;
             font-weight: bold;
             text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
         }
@@ -57,20 +63,17 @@
             background-color: #fff;
         }
 
-        .vision,
-        .mission {
+        .vision, .mission {
             flex: 1;
             padding: 20px;
             max-width: 45%;
         }
 
-        .vision h2,
-        .mission h2 {
+        .vision h2, .mission h2 {
             font-size: 28px;
             margin-bottom: 20px;
             font-weight: bold;
             text-align: center;
-            color: #333;
         }
 
         .vision ul, .mission ul {
@@ -89,38 +92,23 @@
             border-radius: 8px;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         }
-
-        .vision {
-            background-color: #f7f7f7;
-        }
-
-        .mission {
-            background-color: #eaf1f4;
-        }
     </style>
 </head>
 <body>
-
     <!-- Sejarah Section -->
     <section class="sejarah">
-        <h2>Sejarah</h2>
-        <p>
-            Tjantik Kebaya Collection is a brand rooted in tradition and modern elegance, offering exquisite kebayas that celebrate Indonesian heritage.
-            Our story began with a desire to craft timeless pieces that blend cultural significance with contemporary design, representing the beauty and pride of our nation.
-        </p>
+        <div class="sejarah-content">
+            <h2>Sejarah Tjantik Kebaya Collection</h2>
+            <p>Welcome to Tjantik Kebaya Collection! Discover our legacy of timeless designs and innovation.</p>
+        </div>
     </section>
 
     <!-- Visi & Misi Section -->
     <section class="vision-mission">
-        <!-- Visi Section -->
         <div class="vision">
             <h2>Visi</h2>
-            <p>
-                Menjadi produsen kebaya yang mendarat di Indonesia dan di pasar internasional yang dikenal dengan produknya kepercayaan merek, inovasi produk, dan layanan pelanggan yang unggul. Kami berkomitmen untuk melestarikan dan mempromosikan budaya tradisional Indonesia melalui desain kebaya yang modern dan estetis.
-            </p>
+            <p>Menjadi produsen kebaya yang mendarat di Indonesia dan di pasar internasional yang dikenal dengan produknya kepercayaan merek, inovasi produk, dan layanan pelanggan yang unggul. Kami berkomitmen untuk melestarikan dan mempromosikan budaya tradisional Indonesia melalui desain kebaya yang modern dan estetis.</p>
         </div>
-
-        <!-- Misi Section -->
         <div class="mission">
             <h2>Misi</h2>
             <ul>
@@ -133,6 +121,5 @@
             </ul>
         </div>
     </section>
-
 </body>
 </html>
