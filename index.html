@@ -15,6 +15,11 @@
             color: #333;
         }
 
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
         h1, h2, h3, p {
             margin: 0;
             padding: 0;
@@ -25,31 +30,58 @@
             color: inherit;
         }
 
-        /* Sejarah Section */
-        .sejarah {
-            background-image: url('tjantik.png'); /* Replace with the actual image path */
+        /* Sticky Header */
+        header {
+            background-color: white; /* White background for header */
+            color: #722336; /* Text color #722336 */
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0; /* Stick to the top */
+            z-index: 1000; /* Ensures the header stays on top of other content */
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header a {
+            color: #722336; /* Link color to match header text */
+            margin: 0 20px;
+            text-transform: uppercase;
+            font-size: 20px;
+        }
+
+        header a:hover {
+            color: #ff6347;
+        }
+
+        /* Image Section */
+        .image-hero {
+            background-image: url('tjantik_icon.png'); /* Replace with your image path */
             background-size: cover;
             background-position: center;
-            height: 800px; /* Set the height to 800px */
+            height: 700px; /* Set the height to 800px */
             width: 100%; /* Full width */
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
+        }
+
+        /* Sejarah Section */
+        .sejarah-content {
+            padding: 60px 20px;
+            background-color: #c4a060; /* Background color for Sejarah section */
             text-align: center;
-            padding: 0 20px;
-            box-sizing: border-box;
+            color: #6f2436; /* Text color for Sejarah section */
         }
 
-        .sejarah h2 {
-            font-size: 50px;
+        .sejarah-content h2 {
+            font-size: 36px;
             font-weight: bold;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+            margin-bottom: 20px;
         }
 
-        .sejarah p {
+        .sejarah-content p {
             font-size: 20px;
-            margin-top: 15px;
             max-width: 800px;
             margin-left: auto;
             margin-right: auto;
@@ -60,7 +92,8 @@
             display: flex;
             justify-content: space-between;
             padding: 60px 20px;
-            background-color: #fff;
+            background-color: #6f2436; /* Same background color for the Vision and Mission section */
+            color: #c4a060; /* Same text color */
         }
 
         .vision, .mission {
@@ -82,32 +115,40 @@
         }
 
         .vision li, .mission li {
-            font-size: 18px;
-            margin: 10px 0;
-            line-height: 1.5;
+            font-size: 20px;
+            margin-bottom: 10px;
         }
 
-        /* Adding some margin for better spacing */
-        .vision, .mission {
-            border-radius: 8px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-        }
     </style>
 </head>
 <body>
+    <!-- Sticky Header -->
+    <header>
+        <a href="#sejarah">Sejarah</a>
+        <a href="#visi-misi">Visi & Misi</a>
+    </header>
+
+    <!-- Image Section -->
+    <div class="image-hero">
+        <!-- This can be left empty as it's just the background -->
+    </div>
+
     <!-- Sejarah Section -->
-    <section class="sejarah">
-        <div class="sejarah-content">
-            <h2>Sejarah Tjantik Kebaya Collection</h2>
-            <p>Welcome to Tjantik Kebaya Collection! Discover our legacy of timeless designs and innovation.</p>
-        </div>
-    </section>
+    <div id="sejarah" class="sejarah-content">
+        <h2>Sejarah</h2>
+        <p>
+            Tjantik Kebaya Collection started with a passion to preserve Indonesia's rich cultural heritage while merging traditional craftsmanship with modern design. Our journey began with a small boutique offering timeless kebaya pieces and has grown into a trusted name, both locally and internationally.
+        </p>
+    </div>
 
     <!-- Visi & Misi Section -->
-    <section class="vision-mission">
+    <div id="visi-misi" class="vision-mission">
         <div class="vision">
             <h2>Visi</h2>
-            <p>Menjadi produsen kebaya yang mendarat di Indonesia dan di pasar internasional yang dikenal dengan produknya kepercayaan merek, inovasi produk, dan layanan pelanggan yang unggul. Kami berkomitmen untuk melestarikan dan mempromosikan budaya tradisional Indonesia melalui desain kebaya yang modern dan estetis.</p>
+            <ul>
+                <li>Menjadi produsen kebaya yang mendarat di Indonesia dan di pasar internasional yang dikenal dengan produknya kepercayaan merek, inovasi produk, dan layanan pelanggan yang unggul.</li>
+                <li>Kami berkomitmen untuk melestarikan dan mempromosikan budaya tradisional Indonesia melalui desain kebaya yang modern dan estetis.</li>
+            </ul>
         </div>
         <div class="mission">
             <h2>Misi</h2>
@@ -120,6 +161,7 @@
                 <li>Mempromosikan kebaya sebagai simbol keindahan dan kebanggaan bangsa.</li>
             </ul>
         </div>
-    </section>
+    </div>
+
 </body>
 </html>
