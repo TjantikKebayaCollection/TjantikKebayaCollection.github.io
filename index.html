@@ -73,10 +73,16 @@
         @media (max-width: 768px) {
             .image-hero {
                 background-image: url('logotjantik.jpg'); /* Image for mobile */
+                background-size: cover;
+                background-position: center;
+                height: 100vh; /* Full viewport height */
+                width: 100vw;  /* Full viewport width */
             }
 
-            body {
-                overflow-x :hidden; 
+            body, html {
+                height: 100%; /* Ensure full height for body and html */
+                overflow: hidden; /* Prevent scrolling */
+            }
         }
 
         /* Sejarah Section */
