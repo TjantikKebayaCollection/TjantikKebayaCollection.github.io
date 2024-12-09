@@ -128,14 +128,37 @@
             margin: 10px 0;
         }
 
+        @media (max-width: 768px) {
+            header a {
+                font-size: 16px;
+            }
+
+            .vision-mission {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .vision, .mission {
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .sejarah-content h2 {
+                font-size: 2rem;
+            }
+
+            .sejarah-content p {
+                font-size: 1rem;
+            }
+        }
+
     </style>
 </head>
 <body>
 
     <header>
         <a href="#sejarah">Sejarah</a>
-        <a href="#vision">Visi</a>
-        <a href="#mission">Misi</a>
+        <a href="#visi-misi">Visi & Misi</a>
     </header>
 
     <section class="image-hero"></section> <!-- Hero image section -->
@@ -147,24 +170,24 @@
         </p>
     </section>
 
-    <section id="vision" class="vision-mission">
+    <section id="visi-misi" class="vision-mission">
         <div class="vision">
             <h2>Visi</h2>
             <ul>
-                <li>To become the leading Kebaya manufacturer in Indonesia and internationally.</li>
-                <li>To integrate modern innovation with traditional Indonesian culture.</li>
-                <li>To provide high-quality, sustainable products with outstanding customer service.</li>
+                <li>Menjadi produsen kebaya yang dikenal di Indonesia dan internasional.</li>
+                <li>Memadukan tradisi, kualitas, dan modernitas dalam setiap desain kebaya.</li>
+                <li>Melestarikan budaya Indonesia melalui desain kebaya yang estetis dan inovatif.</li>
             </ul>
         </div>
         <div class="mission">
             <h2>Misi</h2>
             <ul>
-                <li>Offering a variety of Kebaya designs tailored to consumer needs.</li>
-                <li>Creating sustainable products that blend tradition, quality, and modernity.</li>
-                <li>Innovating through market research to meet customer preferences.</li>
-                <li>Collaborating with local artisans to showcase Indonesian heritage.</li>
-                <li>Ensuring customer satisfaction with exceptional service and after-sales support.</li>
-                <li>Promoting Kebaya as a symbol of national pride and beauty.</li>
+                <li>Menawarkan beragam desain kebaya yang disesuaikan dengan kebutuhan konsumen.</li>
+                <li>Menciptakan produk berkelanjutan yang memadukan tradisi, kualitas, dan modernitas.</li>
+                <li>Berinovasi melalui riset pasar untuk memenuhi preferensi pelanggan.</li>
+                <li>Berkolaborasi dengan perajin lokal untuk menampilkan warisan Indonesia.</li>
+                <li>Memastikan kepuasan dengan layanan luar biasa dan dukungan purna jual.</li>
+                <li>Mempromosikan kebaya sebagai simbol keindahan dan kebanggaan bangsa.</li>
             </ul>
         </div>
     </section>
