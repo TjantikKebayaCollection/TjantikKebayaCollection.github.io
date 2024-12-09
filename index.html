@@ -79,12 +79,10 @@
                 width: 100vw;  /* Full viewport width */
             }
 
-            body {
+            body, html {
                 height: 100%; /* Ensure full height for body and html */
-                overflow: hidden; /* Prevent scrolling */
-            }
-            html{
-                scroll-behavior: smooth;
+                overflow-x: hidden; /* Prevent horizontal scrolling */
+                overflow-y: auto; /* Allow vertical scrolling */
             }
         }
 
