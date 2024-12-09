@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cool Website</title>
+    <title>Tjantik Kebaya Collection</title>
     <style>
         /* Global Styles */
         body {
-            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
+            font-family: 'Arial', sans-serif;
             background-color: #f4f4f4;
             color: #333;
+        }
+
+        h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
         }
 
         a {
@@ -20,32 +25,37 @@
             color: inherit;
         }
 
-        h1, h2, h3 {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-        }
-
-        /* Navbar */
-        nav {
+        /* Header */
+        header {
             background-color: #333;
-            padding: 15px;
+            color: white;
+            padding: 20px 0;
             text-align: center;
         }
 
-        nav a {
-            color: white;
-            margin: 0 15px;
-            font-size: 16px;
-            text-transform: uppercase;
+        header h1 {
+            font-size: 36px;
+            font-weight: bold;
         }
 
-        nav a:hover {
+        header nav {
+            margin-top: 10px;
+        }
+
+        header nav a {
+            color: white;
+            margin: 0 15px;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        header nav a:hover {
             color: #ff6347;
         }
 
         /* Hero Section */
         .hero {
-            background-image: url('https://via.placeholder.com/1500x600'); /* Replace with your image */
+            background-image: url('https://via.placeholder.com/1500x800'); /* Replace with your image */
             background-size: cover;
             background-position: center;
             height: 600px;
@@ -54,126 +64,189 @@
             justify-content: center;
             color: white;
             text-align: center;
-            font-size: 36px;
         }
 
-        .hero h1 {
+        .hero h2 {
             font-size: 50px;
             font-weight: bold;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
         }
 
         .hero p {
-            font-size: 18px;
-            max-width: 700px;
-            margin: 20px auto;
+            font-size: 20px;
+            margin-top: 15px;
+            max-width: 600px;
         }
 
-        /* Services Section */
-        .services {
+        /* About Us Section */
+        .about-us {
             background-color: #fff;
-            padding: 50px 20px;
+            padding: 60px 20px;
             text-align: center;
         }
 
-        .services h2 {
+        .about-us h2 {
             font-size: 30px;
             margin-bottom: 20px;
         }
 
-        .services .service {
-            margin: 20px;
+        .about-us p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Press Releases Section */
+        .press-releases {
+            background-color: #f9f9f9;
+            padding: 60px 20px;
+        }
+
+        .press-releases h2 {
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .press-releases .article {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .press-releases .article h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .press-releases .article p {
+            font-size: 16px;
+        }
+
+        /* Product Catalog Section */
+        .product-catalog {
+            background-color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .product-catalog h2 {
+            font-size: 30px;
+            margin-bottom: 40px;
+        }
+
+        .product-catalog .catalog-item {
             display: inline-block;
-            width: 250px;
+            margin: 15px;
             padding: 20px;
             background-color: #f4f4f4;
             border-radius: 8px;
+            width: 250px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
         }
 
-        .services .service:hover {
-            transform: translateY(-10px);
-        }
-
-        .services .service h3 {
-            margin-top: 10px;
-            font-size: 22px;
-        }
-
-        .services .service p {
-            font-size: 16px;
-            color: #666;
+        .product-catalog .catalog-item img {
+            width: 100%;
+            border-radius: 8px;
         }
 
         /* Footer */
         footer {
             background-color: #333;
             color: white;
-            padding: 20px 0;
             text-align: center;
+            padding: 20px 0;
         }
 
-        footer a {
-            color: #ff6347;
-            font-weight: bold;
-        }
-
-        footer a:hover {
-            color: #fff;
-        }
-
-        /* Responsive Styles */
-        @media screen and (max-width: 768px) {
-            .hero h1 {
-                font-size: 40px;
-            }
-
-            .services .service {
-                width: 100%;
-                margin-bottom: 20px;
-            }
+        footer p {
+            font-size: 14px;
         }
     </style>
 </head>
-<body>
 
-    <!-- Navbar -->
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
-    </nav>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Tjantik Kebaya Collection</h1>
+        <nav>
+            <a href="#about-us">About Us</a>
+            <a href="#press-releases">Press Releases</a>
+            <a href="#product-catalog">Product Catalog</a>
+            <a href="#facilities">Facilities</a>
+        </nav>
+    </header>
 
     <!-- Hero Section -->
     <div class="hero">
         <div>
-            <h1>Welcome to Our Cool Website</h1>
-            <p>We offer amazing services and products to help you grow your business!</p>
+            <h2>Elegance in Every Thread</h2>
+            <p>Discover the beauty and craftsmanship of our bespoke Kebayas and traditional attire collections.</p>
         </div>
     </div>
 
-    <!-- Services Section -->
-    <div class="services">
-        <h2>Our Services</h2>
-        <div class="service">
-            <h3>Web Development</h3>
-            <p>Create stunning, responsive websites that engage users and drive results.</p>
+    <!-- About Us Section -->
+    <section id="about-us" class="about-us">
+        <h2>About Us</h2>
+        <p>
+            Tjantik Kebaya Collection has been a leader in traditional fashion for over 20 years. Founded on the principles of
+            elegance, craftsmanship, and heritage, we specialize in creating beautiful, hand-tailored Kebayas that reflect the
+            rich culture of Indonesia. Our vision is to preserve traditional artistry while introducing modern elegance.
+        </p>
+        <p>
+            <strong>Mission:</strong> To deliver exceptional, handcrafted Kebayas that blend heritage with modern luxury.<br>
+            <strong>Vision:</strong> To be the leading brand in traditional Indonesian attire, known for innovation and quality.<br>
+            <strong>Location:</strong> Jakarta, Indonesia.
+        </p>
+    </section>
+
+    <!-- Press Releases Section -->
+    <section id="press-releases" class="press-releases">
+        <h2>Press Releases</h2>
+        <div class="article">
+            <h3>New Collection Launch</h3>
+            <p>Our latest collection celebrates the beauty of modern Indonesia with a fresh twist on traditional Kebaya designs.</p>
         </div>
-        <div class="service">
-            <h3>Graphic Design</h3>
-            <p>Design eye-catching visuals that represent your brand in the best way.</p>
+        <div class="article">
+            <h3>Partnership with Indonesian Designers</h3>
+            <p>In collaboration with renowned local designers, Tjantik Kebaya Collection brings forward an exciting new range of outfits.</p>
         </div>
-        <div class="service">
-            <h3>Digital Marketing</h3>
-            <p>Grow your online presence with effective marketing strategies and campaigns.</p>
+        <div class="article">
+            <h3>Exclusive Event at Jakarta Fashion Week</h3>
+            <p>Join us at the Jakarta Fashion Week, where we unveil our most exclusive collection yet, featuring intricate beadwork and luxurious fabrics.</p>
         </div>
-    </div>
+    </section>
+
+    <!-- Product Catalog Section -->
+    <section id="product-catalog" class="product-catalog">
+        <h2>Product Catalog</h2>
+        <div class="catalog-item">
+            <img src="https://via.placeholder.com/250" alt="Kebaya 1">
+            <h3>Elegant Kebaya Set</h3>
+            <p>A stunning Kebaya set made with luxurious silk and intricate embroidery, perfect for special occasions.</p>
+        </div>
+        <div class="catalog-item">
+            <img src="https://via.placeholder.com/250" alt="Kebaya 2">
+            <h3>Classic Wedding Kebaya</h3>
+            <p>This classic wedding Kebaya is designed with timeless elegance and delicate lace details.</p>
+        </div>
+        <div class="catalog-item">
+            <img src="https://via.placeholder.com/250" alt="Kebaya 3">
+            <h3>Casual Day Kebaya</h3>
+            <p>A more relaxed and comfortable Kebaya, perfect for daily wear while maintaining a sense of tradition.</p>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section id="facilities" class="about-us">
+        <h2>Our Facilities</h2>
+        <p>Our main studio is located in Jakarta, equipped with state-of-the-art tailoring facilities and a dedicated team of artisans. We ensure every piece is crafted with the utmost care and precision.</p>
+    </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Cool Website | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        <p>&copy; 2024 Tjantik Kebaya Collection | All rights reserved.</p>
     </footer>
-
 </body>
+
 </html>
