@@ -25,66 +25,31 @@
             color: inherit;
         }
 
-        /* Header */
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 36px;
-            font-weight: bold;
-        }
-
-        header nav {
-            margin-top: 10px;
-        }
-
-        header nav a {
-            color: white;
-            margin: 0 15px;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-
-        header nav a:hover {
-            color: #ff6347;
-        }
-
-        /* Hero Section */
-        .hero {
-            background-image: url('https://via.placeholder.com/1500x800'); /* Replace with your image */
+        /* Sejarah Section */
+        .sejarah {
+            background-image: url('tjantik.png'); /* Replace with actual path to your tjantik.png image */
             background-size: cover;
             background-position: center;
-            height: 600px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             color: white;
+            padding: 80px 20px;
             text-align: center;
-            padding: 0 20px;
-            box-sizing: border-box;
-            flex-direction: column;
         }
 
-        .hero h2 {
-            font-size: 50px;
+        .sejarah h2 {
+            font-size: 40px;
             font-weight: bold;
             text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
-            margin-bottom: 15px;
         }
 
-        .hero p {
+        .sejarah p {
             font-size: 20px;
             margin-top: 15px;
-            max-width: 600px;
+            max-width: 800px;
             margin-left: auto;
             margin-right: auto;
         }
 
-        /* Vision & Mission Section */
+        /* Visi & Misi Section */
         .vision-mission {
             display: flex;
             justify-content: space-between;
@@ -108,22 +73,19 @@
             color: #333;
         }
 
-        .vision ul,
-        .mission ul {
+        .vision ul, .mission ul {
             list-style: none;
             padding-left: 0;
         }
 
-        .vision li,
-        .mission li {
+        .vision li, .mission li {
             font-size: 18px;
             margin: 10px 0;
             line-height: 1.5;
         }
 
         /* Adding some margin for better spacing */
-        .vision,
-        .mission {
+        .vision, .mission {
             border-radius: 8px;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         }
@@ -138,28 +100,27 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>Tjantik Kebaya Collection</h1>
-    </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h2>Welcome to Tjantik Kebaya Collection</h2>
-        <p>Explore timeless designs that blend tradition and modern elegance.</p>
+    <!-- Sejarah Section -->
+    <section class="sejarah">
+        <h2>Sejarah</h2>
+        <p>
+            Tjantik Kebaya Collection is a brand rooted in tradition and modern elegance, offering exquisite kebayas that celebrate Indonesian heritage.
+            Our story began with a desire to craft timeless pieces that blend cultural significance with contemporary design, representing the beauty and pride of our nation.
+        </p>
     </section>
 
-    <!-- Vision & Mission Section -->
+    <!-- Visi & Misi Section -->
     <section class="vision-mission">
-        <!-- Vision Section -->
+        <!-- Visi Section -->
         <div class="vision">
             <h2>Visi</h2>
-            <ul>
-                <li>Menjadi produsen kebaya yang mendarat di Indonesia dan di pasar internasional yang dikenal dengan produknya kepercayaan merek, inovasi produk, dan layanan pelanggan yang unggul.</li>
-                <li>Kami berkomitmen untuk melestarikan dan mempromosikan budaya tradisional Indonesia melalui desain kebaya yang modern dan estetis.</li>
-            </ul>
+            <p>
+                Menjadi produsen kebaya yang mendarat di Indonesia dan di pasar internasional yang dikenal dengan produknya kepercayaan merek, inovasi produk, dan layanan pelanggan yang unggul. Kami berkomitmen untuk melestarikan dan mempromosikan budaya tradisional Indonesia melalui desain kebaya yang modern dan estetis.
+            </p>
         </div>
 
-        <!-- Mission Section -->
+        <!-- Misi Section -->
         <div class="mission">
             <h2>Misi</h2>
             <ul>
@@ -172,5 +133,6 @@
             </ul>
         </div>
     </section>
+
 </body>
 </html>
