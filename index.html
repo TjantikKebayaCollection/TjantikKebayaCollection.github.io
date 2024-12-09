@@ -8,10 +8,10 @@
     <style>
         /* Global Styles */
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
             color: #333;
         }
 
@@ -25,6 +25,59 @@
             color: inherit;
         }
 
+        /* Header */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        header nav {
+            margin-top: 10px;
+        }
+
+        header nav a {
+            color: white;
+            margin: 0 15px;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        header nav a:hover {
+            color: #ff6347;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url('https://via.placeholder.com/1500x800'); /* Replace with your image */
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 50px;
+            font-weight: bold;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-top: 15px;
+            max-width: 600px;
+        }
+
         /* Vision & Mission Section */
         .vision-mission {
             display: flex;
@@ -33,13 +86,15 @@
             background-color: #fff;
         }
 
-        .vision, .mission {
+        .vision,
+        .mission {
             flex: 1;
             padding: 20px;
             max-width: 45%;
         }
 
-        .vision h2, .mission h2 {
+        .vision h2,
+        .mission h2 {
             font-size: 28px;
             margin-bottom: 20px;
             font-weight: bold;
@@ -47,44 +102,97 @@
             color: #333;
         }
 
-        .vision ul, .mission ul {
+        .vision ul,
+        .mission ul {
             list-style: none;
             padding-left: 0;
         }
 
-        .vision li, .mission li {
+        .vision li,
+        .mission li {
             font-size: 18px;
             margin: 10px 0;
             line-height: 1.5;
         }
 
-        /* Adding some margin for better spacing */
-        .vision, .mission {
+        /* Vision Section Styling */
+        .vision {
+            background-color: #f7f7f7;
             border-radius: 8px;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        .vision {
-            background-color: #f7f7f7;
-        }
-
+        /* Mission Section Styling */
         .mission {
             background-color: #eaf1f4;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Press Releases Section */
+        .press-releases {
+            background-color: #f9f9f9;
+            padding: 60px 20px;
+        }
+
+        .press-releases h2 {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        .press-releases .article {
+            background-color: #fff;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .press-releases .article h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .press-releases .article p {
+            font-size: 16px;
         }
 
     </style>
 </head>
+
 <body>
     <header>
         <h1>Tjantik Kebaya Collection</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#about-us">About Us</a>
+            <a href="#press-releases">Press Releases</a>
+            <a href="#vision-mission">Vision & Mission</a>
+        </nav>
     </header>
 
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Welcome to Tjantik Kebaya Collection</h2>
+        <p>Explore timeless designs that blend tradition and modern elegance.</p>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about-us" class="about-us">
+        <h2>About Us</h2>
+        <p>Tjantik Kebaya Collection offers a wide range of Kebaya designs that combine the best of traditional Indonesian culture with contemporary fashion trends. Our mission is to preserve and promote the elegance of the Kebaya while innovating with modern styles.</p>
+    </section>
+
     <!-- Vision & Mission Section -->
-    <section class="vision-mission">
+    <section id="vision-mission" class="vision-mission">
         <!-- Vision Section -->
         <div class="vision">
             <h2>Visi</h2>
-            <p>Menjadi produsen kebaya yang mendarat di Indonesia dan di pasar internasional yang dikenal dengan produknya kepercayaan merek, inovasi produk, dan layanan pelanggan yang unggul. Kami berkomitmen untuk melestarikan dan mempromosikan budaya tradisional Indonesia melalui desain kebaya yang modern dan estetis.</p>
+            <ul>
+                <li>Menjadi produsen kebaya yang mendarat di Indonesia dan di pasar internasional yang dikenal dengan produknya kepercayaan merek, inovasi produk, dan layanan pelanggan yang unggul.</li>
+                <li>Kami berkomitmen untuk melestarikan dan mempromosikan budaya tradisional Indonesia melalui desain kebaya yang modern dan estetis.</li>
+            </ul>
         </div>
 
         <!-- Mission Section -->
@@ -98,6 +206,23 @@
                 <li>Memastikan kepuasan dengan layanan luar biasa dan dukungan purna jual.</li>
                 <li>Mempromosikan kebaya sebagai simbol keindahan dan kebanggaan bangsa.</li>
             </ul>
+        </div>
+    </section>
+
+    <!-- Press Releases Section -->
+    <section id="press-releases" class="press-releases">
+        <h2>Press Releases</h2>
+        <div class="article">
+            <h3>Press Release 1</h3>
+            <p>Details about the press release or article related to new products, events, or innovations in Tjantik Kebaya Collection.</p>
+        </div>
+        <div class="article">
+            <h3>Press Release 2</h3>
+            <p>Another press release highlighting the company's initiatives and achievements.</p>
+        </div>
+        <div class="article">
+            <h3>Press Release 3</h3>
+            <p>Details about a press article that covers the company's market expansion or collaborations.</p>
         </div>
     </section>
 
